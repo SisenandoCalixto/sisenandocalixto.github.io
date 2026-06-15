@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Configurações da Extensão</title>
+<link rel="stylesheet" href="estilo.css" />
+<script defer src="/modulos/datas.js"></script>
+<script defer src="/modulos/definicoes.js"></script>
+<script defer src="/modulos/contexto.js"></script>
+<script defer src="/modulos/expressoes.js"></script>
+<script defer src="/modulos/links.js"></script>
+<script defer src="/modulos/relatar.js"></script>
+<script defer src="/modulos/navegador.js"></script>
+<script defer src="/modulos/dom.js"></script>
+<script defer src="/modulos/esforcos.js"></script>
+<script defer src="/modulos/automacao.js"></script>
+<script defer src="/modulos/tempo.js"></script>
+<script defer src="/modulos/texto.js"></script>
+<script defer src="/navegador/paginas/modulos/cabecalho.js"></script>
+<script defer src="/navegador/paginas/modulos/corpo.js"></script>
+<script defer src="/navegador/paginas/modulos/rodape.js"></script>
+<script defer src="programa.js"></script>
+</head>
+
+<body>
+
+<sisejt-extensao>
+
+<header><h1></h1></header>
+
+<main>
+
+<funcionalidades chave="pessoa" titulo="CONFIGURAÇÕES INDIVIDUAIS">
+	
+	<label class="sisejt-largura-50">Tribunal:
+		<select chave="regiao">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+		</select>
+	</label>
+	<label class="sisejt-largura-50">Instância:
+		<select chave="instancia">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+	</label>
+</funcionalidades>
+
+<funcionalidades chave="autoGIGS" titulo="CONFIGURAÇÕES DE AUTOGIGS">
+	<label class="sisejt-largura-50">ID do Modelo de Documento:
+		<input type="text" chave="documentoModeloId">
+	</label>
+</funcionalidades>
+
+<funcionalidades chave="sistemasSatelites" titulo="CONFIGURAÇÕES DE SISTEMAS SATÉLITES">
+	<label>URL de Consulta a Processos do E-Carta:
+		<input type="text" chave="ecartaUrlConsultaProcessos" list="ecartaUrlConsultaProcessos">
+	</label>
+	<label>Subdomínio do Zoom:
+		<input type="text" chave="zoomSubdominio" list="zoomSubdominio">
+	</label>
+	<datalist id="ecartaUrlConsultaProcessos">
+		<option value="https://ecarta.trt15.jus.br/consultarProcesso.xhtml"></option>
+	</datalist>
+	<datalist id="zoomSubdominio">
+		<option value="trt15-jus-br"></option>
+	</datalist>
+</funcionalidades>
+
+<funcionalidades chave="diagnostico" titulo="DIAGNÓSTICO">
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="armazenamento">
+		<guia
+			ativada			= "ARMAZENAMENTO"
+			desativada	= "ARMAZENAMENTO"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="autogigs">
+		<guia
+			ativada			= "AUTOGIGS"
+			desativada	= "AUTOGIGS"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="automacao">
+		<guia
+			ativada			= "AUTOMAÇÕES"
+			desativada	= "AUTOMAÇÕES"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="configuracao">
+		<guia
+			ativada			= "CONFIGURAÇÕES"
+			desativada	= "CONFIGURAÇÕES"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="contexto">
+		<guia
+			ativada			= "CONTEXTO"
+			desativada	= "CONTEXTO"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="dom">
+		<guia
+			ativada			= "DOM"
+			desativada	= "DOM"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="erro">
+		<guia
+			ativada			= "ERROS"
+			desativada	= "ERROS"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="execucao">
+		<guia
+			ativada			= "EXECUÇÕES"
+			desativada	= "EXECUÇÕES"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="mutacao">
+		<guia
+			ativada			= "MUTAÇÕES"
+			desativada	= "MUTAÇÕES"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="navegador">
+		<guia
+			ativada			= "NAVEGADOR"
+			desativada	= "NAVEGADOR"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="requisicao">
+		<guia
+			ativada			= "REQUISIÇÃO"
+			desativada	= "REQUISIÇÃO"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="resposta">
+		<guia
+			ativada			= "RESPOSTA"
+			desativada	= "RESPOSTA"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="selecao">
+		<guia
+			ativada			= "SELEÇÃO"
+			desativada	= "SELEÇÃO"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="texto">
+		<guia
+		ativada			= "TEXTO"
+		desativada	= "TEXTO"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="teste">
+		<guia
+			ativada			= "TESTE"
+			desativada	= "TESTE"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="xhr">
+		<guia
+			ativada			= "XHR"
+			desativada	= "XHR"
+		></guia>
+	</label>
+	<label class="sisejt-largura-50">
+		<input type="checkbox" chave="worker">
+		<guia
+			ativada			= "WORKER"
+			desativada	= "WORKER"
+		></guia>
+	</label>
+	<label>URL de Instalação do PJe (Não Preencher sem Orientação):
+		<input type="text" chave="pjeUrlRaiz" list="pjeUrlRaiz">
+	</label>
+	<datalist id="pjeUrlRaiz">
+		<option value="https://pje-web-hm.trt15.jus.br"></option>
+	</datalist>
+
+</funcionalidades>
+
+
+</main>
+
+<sisejt-botao id="salvar" class="sombra-escura">💾</sisejt-botao>
+<sisejt-botao id="recarregar" class="sombra-escura">♻</sisejt-botao>
+
+</sisejt-extensao>
+
+<footer><botoes></botoes></footer>
+
+</body>
+</html>
